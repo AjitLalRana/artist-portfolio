@@ -4,6 +4,9 @@ import tinku from "../assets/tinku-crop.png";
 import DateTime from "../components/DateTime";
 import { FaYoutube, FaInstagram, FaFacebook } from "react-icons/fa";
 import signature from "../assets/signature.png";
+import texture from "../assets/texture.jpg";
+import ImageReveal from "./ImageReveal";
+import VideoCursor from "./VideoCursor";
 
 import ThreadsIcon from "./ThreadsIcon";
 
@@ -45,34 +48,37 @@ const PortfolioLanding = () => {
     {
       icon: FaInstagram,
       link: "https://www.instagram.com/artisttinku/",
-      color: "hover:text-[#E1306C]",
+      color: " hover:text-[#E1306C]",
     },
     {
       icon: FaFacebook,
       link: "https://www.facebook.com/artists.tinku/",
-      color: "hover:text-[#1877F2]",
+      color: " hover:text-[#1877F2]",
     },
     {
       icon: ThreadsIcon,
       link: "https://www.threads.com/@artisttinku?xmt=AQF0L4lhBYnWG8mjS2sFgnHM-lWrs7AdgwNy54jyN8SxMnI",
-      color: "hover:text-[#fff]",
+      color: " hover:text-[#fff]",
     },
   ];
 
   return (
     <>
       {/* Invisible overlay to prevent interactions with background elements */}
-      <div className="absolute w-full h-screen  z-9"></div>
+
+      <div className="absolute w-full h-screen  z-10">
+        <VideoCursor />
+      </div>
       <div
         id="home"
-        className="relative w-full h-screen  bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] text-[#E5E5E5] overflow-hidden font-sans flex flex-col justify-between px-6 py-8 md:px-12 md:py-20"
+        className="relative w-full h-screen  bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] text-[#E5E5E5] overflow-hidden font-sans flex flex-col justify-between px-6 py-10 md:px-12 md:py-25"
       >
         {/* --- Top Header Section --- */}
         <motion.header
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="flex justify-between items-start z-30 relative uppercase tracking-widest text-xs md:text-sm font-bold"
+          className="flex justify-between items-start  relative uppercase tracking-widest text-xs md:text-sm font-bold"
         >
           <div className="text-right">
             <span className="block text-gray-400 mb-1">
@@ -87,14 +93,25 @@ const PortfolioLanding = () => {
           initial="hidden"
           animate="visible"
           variants={textScale}
-          className="absolute inset-0 flex flex-col items-center justify-evenly md:justify-center z-10 "
+          className="absolute inset-0 flex flex-col items-center justify-evenly md:justify-center  "
         >
-          <h1 className="text-[16vw] leading-none font-[Neue] font-black text-[#f4f4f5] tracking-wider select-none drop-shadow-lg ">
+          <h1
+            style={{
+              backgroundImage: `url(${texture})`,
+            }}
+            className="z-20
+    text-[19vw] pb-35 sm:pb-0 rotate-[-5deg]
+    leading-none font-[Neue] font-black tracking-wider
+    select-none
+    bg-cover bg-center
+    text-transparent bg-clip-text
+  "
+          >
             PORTFOLIO
           </h1>
-          <div className="w-full flex  justify-between px-20">
+          <div className="w-full flex z-50 justify-between px-10  sm:px-40 ">
             <motion.div
-              className="flex gap-6"
+              className="flex justify-between items-center gap-2 sm:gap-6 "
               initial="hidden"
               animate="visible"
               variants={{
@@ -115,14 +132,14 @@ const PortfolioLanding = () => {
                     href={social.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`text-gray-400 ${social?.color} transition-colors rounded-full p-2`}
+                    className={` text-gray-400   ${social?.color} transition-colors rounded-full p-2`}
                     variants={{
                       hidden: { opacity: 0, y: 20 },
                       visible: { opacity: 1, y: 0 },
                     }}
                     whileHover={{
                       scale: 1.2,
-                      y: -5,
+                      y: -20,
                     }}
                     whileTap={{
                       scale: 0.9,
@@ -137,8 +154,8 @@ const PortfolioLanding = () => {
                 );
               })}
             </motion.div>
-            <div className="flex flex-col items-end ">
-              <img src={signature} alt="Signature" className="w-40" />
+            <div className="absolute top-1/2 right-10 flex flex-col items-end ">
+              <img src={signature} alt="Signature" className="w-20 sm:w-40" />
             </div>
           </div>
         </motion.div>
@@ -149,13 +166,13 @@ const PortfolioLanding = () => {
           initial="hidden"
           animate="visible"
           variants={imageSlideUp}
-          className="w-[100%] md:w-auto h-full absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20 h-[65vh] md:h-[85vh] pointer-events-none"
+          className="w-[100%] md:w-auto h-full absolute bottom-0 left-1/2 transform -translate-x-1/2 z-35 h-[65vh] md:h-[85vh] pointer-events-none"
         >
           <img
             // Replace this src with your own transparent cutout PNG
             src={tinku}
             alt="Portfolio Portrait"
-            className="h-full w-full object-cover grayscale drop-shadow-2xl"
+            className="h-full w-full object-cover  drop-shadow-2xl"
             style={{
               // Fades the bottom edge of the image slightly to blend with the footer
               maskImage: "linear-gradient(to top, transparent 0%, black 15%)",

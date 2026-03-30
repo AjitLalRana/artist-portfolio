@@ -1,15 +1,19 @@
 import { motion } from "motion/react";
 import { Ticket } from "lucide-react";
+import rang1 from "../assets/rang-1.png";
+import rang2 from "../assets/rang-2.png";
+import rang4 from "../assets/rang-4.png";
+import rang5 from "../assets/rang-5.png";
+import rang6 from "../assets/rang-6.png";
+import rang7 from "../assets/rang-7.png";
 
 const galleryItems = [
-  { id: "01", title: "Vibrant Vision", category: "Acrylic", image: "https://picsum.photos/seed/eye-art/800/1000" },
-  { id: "02", title: "Majestic Predator", category: "Oil Painting", image: "https://picsum.photos/seed/tiger-art/800/1200" },
-  { id: "03", title: "Nocturnal Guardian", category: "Charcoal", image: "https://picsum.photos/seed/owl-art/800/1200" },
-  { id: "04", title: "Floral Soul", category: "Mixed Media", image: "https://picsum.photos/seed/flower-portrait/800/1100" },
-  { id: "05", title: "Metamorphosis", category: "Triptych", image: "https://picsum.photos/seed/butterfly-art/1200/800" },
-  { id: "06", title: "Lord Hanuman", category: "Traditional", image: "https://picsum.photos/seed/hanuman-art/800/1100" },
-  { id: "07", title: "Innocence", category: "Portrait", image: "https://picsum.photos/seed/child-portrait/800/1000" },
-  { id: "08", title: "Eternal Bond", category: "Expressionism", image: "https://picsum.photos/seed/mother-child/800/1100" },
+  { id: "01", title: "Vibrant Vision", category: "Acrylic", image: rang1 },
+  { id: "02", title: "Majestic Predator", category: "Oil Painting", image: rang2 },
+  { id: "04", title: "Floral Soul", category: "Mixed Media", image: rang4 },
+  { id: "05", title: "Metamorphosis", category: "Triptych", image: rang5 },
+  { id: "06", title: "Lord Hanuman", category: "Traditional", image: rang6 },
+  { id: "07", title: "Innocence", category: "Portrait", image: rang7 },
 ];
 
 export default function Gallery() {

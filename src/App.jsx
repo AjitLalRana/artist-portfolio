@@ -5,6 +5,9 @@ import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import { motion, useScroll, useSpring } from "motion/react";
 import PortfolioLanding from "./components/PortfolioLanding";
+import ArtworkMarquee from "./components/ArtworkMarquee";
+import VideoCursor from "./components/VideoCursor";
+import MedalsMarquee from "./components/MedalsMarquee";
 
 export default function App() {
   const { scrollYProgress } = useScroll();
@@ -26,9 +29,11 @@ export default function App() {
       
       <main>
         <PortfolioLanding />
+        <ArtworkMarquee />
         <About />
+        <MedalsMarquee />
         <Portfolio />
-        <Gallery />
+        {/* <Gallery /> */}
         <Contact />
       </main>
     </div>
