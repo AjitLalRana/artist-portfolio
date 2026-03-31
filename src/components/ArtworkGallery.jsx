@@ -2,12 +2,12 @@ import { motion } from "framer-motion"; // Changed to framer-motion (standard fo
 import { FaWhatsapp } from "react-icons/fa";
 
 
-import img1 from "../assets/rang-1.png";
-import img2 from "../assets/rang-2.png";
-import img3 from "../assets/rang-4.png";
-import img4 from "../assets/rang-5.png";
-import img5 from "../assets/rang-6.png";
-import img6 from "../assets/rang-7.png";
+import img1 from "../assets/rang-1.webp";
+import img2 from "../assets/rang-2.webp";
+import img3 from "../assets/rang-4.webp";
+import img4 from "../assets/rang-5.webp";
+import img5 from "../assets/rang-6.webp";
+import img6 from "../assets/rang-7.webp";
 
 const artworks = [
   { id: 1, title: "Royal Rangoli", category: "Rangoli", image: img1 },

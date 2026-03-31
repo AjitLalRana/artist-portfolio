@@ -1,17 +1,17 @@
 import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 import { useRef, useEffect, useState, useMemo } from "react";
 
-import art2 from "../assets/port-2.png";
-import art3 from "../assets/port-3.png";
-import art5 from "../assets/port-5.png";
-import art6 from "../assets/port-6.png";
-import art7 from "../assets/port-7.png";
-import signature from "../assets/signature.png";
-import rang1 from "../assets/rang-1.png";
-import rang2 from "../assets/rang-2.png";
-import rang4 from "../assets/rang-4.png";
-import rang5 from "../assets/rang-5.png";
-import rang6 from "../assets/rang-6.png";
+import art2 from "../assets/port-2.webp";
+import art3 from "../assets/port-3.webp";
+import art5 from "../assets/port-5.webp";
+import art6 from "../assets/port-6.webp";
+import art7 from "../assets/port-7.webp";
+import signature from "../assets/signature.webp";
+import rang1 from "../assets/rang-1.webp";
+import rang2 from "../assets/rang-2.webp";
+import rang4 from "../assets/rang-4.webp";
+import rang5 from "../assets/rang-5.webp";
+import rang6 from "../assets/rang-6.webp";
 
 const baseArtworks = [
   art2, rang1, art5, rang2, rang4,

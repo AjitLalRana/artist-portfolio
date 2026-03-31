@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import signBlack from "../assets/signBlack.png";
+import signBlack from "../assets/signBlack.webp";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

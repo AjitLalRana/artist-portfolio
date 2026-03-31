@@ -1,11 +1,11 @@
 import { motion } from "motion/react";
 import { useState } from "react";
-import rang1 from "../assets/rang-1.png";
-import rang2 from "../assets/rang-2.png";
-import rang4 from "../assets/rang-4.png";
-import rang5 from "../assets/rang-5.png";
-import rang6 from "../assets/rang-6.png";
-import rang7 from "../assets/rang-7.png";
+import rang1 from "../assets/rang-1.webp";
+import rang2 from "../assets/rang-2.webp";
+import rang4 from "../assets/rang-4.webp";
+import rang5 from "../assets/rang-5.webp";
+import rang6 from "../assets/rang-6.webp";
+import rang7 from "../assets/rang-7.webp";
 import ArtworkGallery from "./ArtworkGallery";
 
 import face1 from "../assets/celebrity/face1.png";

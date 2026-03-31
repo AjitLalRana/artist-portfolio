@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import modal from "../assets/modal.png";
+import modal from "../assets/modal.webp";
 
 export default function About() {
   return (

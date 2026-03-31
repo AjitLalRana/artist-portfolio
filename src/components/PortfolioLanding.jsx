@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import tinku from "../assets/tinku-crop.png";
+import tinku from "../assets/tinku-crop.webp";
 import DateTime from "../components/DateTime";
 import { FaYoutube, FaInstagram, FaFacebook } from "react-icons/fa";
-import signature from "../assets/signature.png";
-import texture from "../assets/texture.jpg";
+import signature from "../assets/signature.webp";
+import texture from "../assets/texture.webp";
 import VideoCursor from "./VideoCursor";
 
 import ThreadsIcon from "./ThreadsIcon";
