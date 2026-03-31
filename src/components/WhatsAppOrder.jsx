@@ -10,16 +10,6 @@ const WhatsAppOrder = ({phoneNumber, message}) => {
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
       
-      {/* Tooltip */}
-      {/* <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1 }}
-        className="bg-black text-white text-sm px-4 py-2 rounded-full shadow-md"
-      >
-        
-      </motion.div> */}
-
       {/* Button */}
       <motion.a
         href={whatsappURL}

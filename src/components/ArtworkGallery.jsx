@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"; // Changed to framer-motion (standard for 2026)
 import { FaWhatsapp } from "react-icons/fa";
 
-// 👉 Replace with your images
+
 import img1 from "../assets/rang-1.png";
 import img2 from "../assets/rang-2.png";
 import img3 from "../assets/rang-4.png";
@@ -16,9 +16,14 @@ const artworks = [
   { id: 4, title: "Sketch Face", category: "Sketch", image: img4 },
   { id: 5, title: "Color Burst", category: "Abstract", image: img5 },
   { id: 6, title: "Minimal Art", category: "Sketch", image: img6 },
+  { id: 7, title: "Royal Rangoli", category: "Rangoli", image: img1 },
+  { id: 8, title: "Modern Portrait", category: "Portrait", image: img2 },
+  { id: 9, title: "Festival Design", category: "Rangoli", image: img3 },
+  { id: 11, title: "Color Burst", category: "Abstract", image: img5 },
+  { id: 12, title: "Minimal Art", category: "Sketch", image: img6 },
 ];
 
-export default function PortfolioGallery() {
+export default function ArtworkGallery() {
   const phoneNumber = "916299492967";
 
   const handleWhatsApp = (art) => {
@@ -41,12 +46,12 @@ export default function PortfolioGallery() {
           </p>
         </div>
         <div className="hidden md:block text-right">
-          <p className="text-sm font-mono text-zinc-400">EST. 2024 — PORTFOLIO</p>
+          <p className="text-sm font-mono text-zinc-400">EST. 2026 — PORTFOLIO</p>
         </div>
       </div>
 
       {/* Masonry Grid */}
-      <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8 max-w-7xl mx-auto">
+      <div className="columns-2 sm:columns-4 lg:columns-5 gap-2 sm:gap-8 space-y-8 max-w-7xl mx-auto">
         {artworks.map((art, index) => (
           <motion.div
             key={art.id}

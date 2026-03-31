@@ -5,7 +5,6 @@ import DateTime from "../components/DateTime";
 import { FaYoutube, FaInstagram, FaFacebook } from "react-icons/fa";
 import signature from "../assets/signature.png";
 import texture from "../assets/texture.jpg";
-import ImageReveal from "./ImageReveal";
 import VideoCursor from "./VideoCursor";
 
 import ThreadsIcon from "./ThreadsIcon";
