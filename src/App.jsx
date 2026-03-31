@@ -2,7 +2,7 @@ import { Suspense, lazy } from "react";
 import Navbar from "./components/Navbar";
 import { motion, useScroll, useSpring } from "motion/react";
 
-// 🔥 Lazy load heavy sections
+// Lazy load heavy sections
 const PortfolioLanding = lazy(() => import("./components/PortfolioLanding"));
 const ArtworkMarquee = lazy(() => import("./components/ArtworkMarquee"));
 const About = lazy(() => import("./components/About"));
